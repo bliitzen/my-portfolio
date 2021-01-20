@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Christian France</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body style="background-color: #EADEDA">
+    <div class="container">
+       <div class="nav-wrapper" style="background-color: #2E294E;">
+           <div class="nav-link-wrapper active-nav-link">
+               <a href="index.html">Home</a>
+           </div>
+
+           <!-- ADD MORE NAV PAGES HERE -->
+           <div class="nav-link-wrapper">
+                <a href="about.html">About</a>
+           </div>
+
+           <div class="nav-link-wrapper">
+               <a href="contact.html">Contact</a>
+           </div>
+
+       </div>
+       <div class="content-wrapper">
+          <div class="imgs-wrapper">
+
+            <div class="img-wrapper">
+                <div class="img-background" style="background-image:url(images/coding.jpg)"></div>
+      
+                <div class="img-text-wrapper">
+                  <div class="img-title-wrapper">Coding</div>
+      
+                  <div class="subtitle">Experience with C++, Python, HTML/CSS, Node.js, javascript, VBA</div>
+                </div>
+              </div>
+
+              <div class="img-wrapper">
+                <div class="img-background" style="background-image:url(images/breadboard.jpg)"></div>
+      
+                <div class="img-text-wrapper">
+                  <div class="img-title-wrapper">Electronics</div>
+      
+                  <div class="subtitle">Experience with breadboards, arduino, and digital logic</div>
+                </div>
+              </div>
+
+              <div class="img-wrapper">
+                <div class="img-background" style="background-image:url(images/autocad.jpg)"></div>
+      
+                <div class="img-text-wrapper">
+                  <div class="img-title-wrapper">CO-OPs</div>
+      
+                  <div class="subtitle">Currently searching for a Summer 2021 CO-OP / Internship oppurtunity!</div>
+                </div>
+              </div>
+
+          </div>  
+       </div>
+    </div>
+
+    <div class="word-container">
+      <div class="text-wrapper">
+        <h1>Coding Experience</h1>
+        <h2>HTML / CSS</h2>
+        <h3>This portfolio was my first HTML/CSS project. Having a good base knowledge of other programming
+          languages made these languages much easier to pick up. It has a much easier learning
+          curve compared to other languages and will be very practical in the future. I am excited to learn more. 
+        </h3>
+        <h2>C++</h2>
+        <h3>
+          I took a strong interest in C++ when I got to college. I am currently taking a Data Structures course that is focused
+          on C++. I have also started work in Unreal Engine which uses C++ to develop next level games. I want to learn more as it is a very powerful language. 
+        </h3>
+        <h2>Python</h2>
+        <h3>
+          I have really only used python to make fun little 2D games (Tic-tac-toe, checkers, top-down zombies). I am currently
+          taking a Python Programming course and am super excited to learn more about the language and it's uses.
+        </h3>
+        <h2>javascript</h2>
+        <h3>
+          Javascript. The language that introduced me to programming. I have a good base knowledge of javascript but quickly realized how much
+          it had to offer. I am currently taking a Full Stack development course on my own time that uses a lot of javascript and it has been really cool
+          to learn and I am excited to put these new skills to use.
+        </h3>
+        <h2>VBA</h2>
+        <h3>
+          I used Visual Basic in my freshman engineering course. We really didn't go too in depth with it, but it is a very practical tool to have for the future.
+        </h3>
+        <h2>Node.js</h2>
+        <h3>
+          I have used node.js a few times, for this website and the full stack course I am taking. It is confusing at times and I want to learn more about it. Added 
+          to the list of courses I want to take in my free time.
+        </h3>
+        <h1>Electronics Experience</h1>
+        <h2>Arduino</h2>
+        <h3>
+          My senior year of high school we worked with the City of Dublin to create air quality sensors to place around the city. We used the Arduino (similar to a raspberry pi) to run the software and hardware necessary.
+          I am not sure if the cities plans came to fruition because the year ended before moving further with the project. (Never physically went outside with our devices we created)
+        </h3>
+        <h2>Breadboard</h2>
+        <h3>
+          I took a Digital Design course fall semester of my sophomore year, just before switching to Computer Science. We learned all about digital logic then applied this
+          knowledge in our lab on our breadboards. It was really cool to see them work while having an understanding of why they work.
+        </h3>
+        <h1>CO-OP Experience</h1>
+        <h3>:(</h3>
+      </div>
+
+    </div>
+
+</body>
+
+<script>
+    const portfolioItems = document.querySelectorAll('.img-wrapper');
+  
+    portfolioItems.forEach(portfolioItem => {
+      portfolioItem.addEventListener('mouseover', () => {
+        console.log(portfolioItem.childNodes[1].classList)
+        portfolioItem.childNodes[1].classList.add('img-blur');
+      });
+  
+      portfolioItem.addEventListener('mouseout', () => {
+        console.log(portfolioItem.childNodes[1].classList)
+        portfolioItem.childNodes[1].classList.remove('img-blur');
+      });
+    });
+  
+  </script>
+
+</html>
